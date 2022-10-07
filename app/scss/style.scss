@@ -118,7 +118,7 @@ $colorText: #094067;
     width: 100%;
     font-size: 1rem;
     font-weight: bold;
-    color: #094067;
+    color: $colorText;
     background-color: #eeebe8;
     padding: 10px;
     ul {
@@ -145,4 +145,19 @@ $colorText: #094067;
         top: 50%;
         transform: translateY(-50%);
     }
+}
+//clearSewer
+.clearSewer__box {
+    background-color: #eeebe8;
+    padding: 10px;
+}
+.clearSewer__title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 16px;
+    color: $colorText;
+    font-weight: 700;
+}
+.clearSewer__dscr {
+    color: #544d83;
 }
