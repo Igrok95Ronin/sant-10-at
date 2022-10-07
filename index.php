@@ -1,11 +1,11 @@
 <?php
-$site_data      = json_decode(file_get_contents('http://templates.jquery.link/api/' . $_SERVER['HTTP_HOST']), true);
+$site_data      = json_decode(file_get_contents('http://local.jquery.link/api/' . $_SERVER['HTTP_HOST']), true);
 
 $phone_name     = $site_data['phone_name'];
 $phone_href     = $site_data['phone_href'];
 
-$text           = str_replace('+', ' ', trim($_GET['t'] ?? 'Entrumpelung'));
-$city           = str_replace('+', ' ', trim($_GET['n'] ?? 'in der nahe'));
+$text           = str_replace('+', ' ', trim($_GET['t'] ?? 'Ontstoppingsdienst'));
+$city           = str_replace('+', ' ', trim($_GET['n'] ?? ''));
 
 $title = $text . ' ' . $city;
 ?>
@@ -27,7 +27,7 @@ $title = $text . ' ' . $city;
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 container">
-                    <h1 class="header__title">Ontstoppingsdienst</h1>
+                    <h1 class="header__title"><?= $title ?></h1>
                     <div class="header__box">
                         <img class="header__img" src="./assets/img/csm_brauco-ruhr-rohrreinigung-privathaushalte_b27f866ad1.jpg" alt="" >
                         <img class="header__img header_displayNone" src="./assets/img/abflussreinigung.jpg" alt="" >
@@ -45,7 +45,7 @@ $title = $text . ' ' . $city;
                         <div class="availability24__box">
                             <p class="availability24__dscr">Wij staan 24/7 klaar om uw verstopping te verhelpen.</p>
                             <div class="availability24__inner">
-                                <a class="Btn" href="#" ><span>111222333</span></a>
+                                <a class="Btn" href="<?= $phone_href ?>" ><span><?= $phone_name ?></span></a>
                             </div>
                         </div>
                     </div>
@@ -137,7 +137,7 @@ $title = $text . ' ' . $city;
                         <div class="availability24__box">
                             <p class="availability24__dscr">Wij staan 24/7 klaar om uw verstopping te verhelpen.</p>
                             <div class="availability24__inner">
-                                <a class="Btn" href="#" ><span>111222333</span></a>
+                                <a class="Btn" href="<?= $phone_href ?>" ><span><?= $phone_name ?></span></a>
                             </div>
                         </div>
                     </div>
