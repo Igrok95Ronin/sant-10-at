@@ -81,7 +81,7 @@ $colorText: #094067;
     text-align: center;
     color: #FFFFFF;
     font-weight: 900;
-    font-size: 50px;
+    font-size: clamp(25px,5vw,50px);
     padding: 0px 0 5px;
 }
 .header__box {
@@ -297,4 +297,57 @@ $colorText: #094067;
     padding-left: 20px;
     border-radius: 5px;
     font-weight: 700;
+}
+//media
+@media(max-width: 767px) {
+    .unlockService__box {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .specialists__img {
+        max-width: 350px;
+    }
+    .specialists__box,
+    .servicesAll__inner {
+        grid-template-columns: 1fr;
+    }
+    .comments__box {
+        padding: 32px 10px;
+    }
+    .forms {
+        margin: 40px 0 0;
+    }
+}
+@media(max-width: 425px) {
+    .header__box {
+        grid-template-columns: 1fr;
+    }
+    .header_displayNone{
+        display: none;
+    }
+    .availability24__dscr {
+        font-size: 16px;
+    }
+    .availability24__inner {
+        padding: 5px;
+    }
+    .Btn {
+        width: 100%;
+    }
+    .services__title {
+        font-size: 19px;
+        margin-bottom: 30px;
+    }
+    .services__li {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .clearSewer__title,
+    .unlockService__title,
+    .specialists__title {
+        font-size: 25px;
+    }
+    .clearSewer {
+        margin-bottom: 32px;
+    }
 }
