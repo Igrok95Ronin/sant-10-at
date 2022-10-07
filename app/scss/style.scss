@@ -224,7 +224,7 @@ $colorText: #094067;
 }
 //servicesAll
 .servicesAll {
-    margin: 64px 0;
+    margin: 64px 0 0;
 }
 .servicesAll__inner {
     display: grid;
@@ -247,4 +247,24 @@ $colorText: #094067;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+//comments
+.comments {
+}
+.comments__box {
+    background-color: #eeebe8;
+    padding: 32px;
+}
+.comments__name {
+    font-weight: 700;
+    display: inline-block;
+    font-style: italic;
+    margin-bottom: 16px;
+}
+.comments__star {
+    color: #FFAE00;
+}
+.comments__comment {
+    color: #544d83;
+    line-height: 1.3;
 }
