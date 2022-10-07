@@ -148,7 +148,7 @@ $colorText: #094067;
 }
 //clearSewer
 .clearSewer{
-    margin-bottom: 32px;
+    margin-bottom: 64px;
 }
 .clearSewer__box {
     background-color: #eeebe8;
@@ -166,7 +166,7 @@ $colorText: #094067;
 }
 //unlockService
 .unlockService {
-    margin-bottom: 32px;
+    margin-bottom: 64px;
 }
 .unlockService__title {
     font-size: 32px;
@@ -191,4 +191,34 @@ $colorText: #094067;
 .unlockService__name {
     color: #544d83;
     font-weight: 700;
+}
+//specialists
+.specialists {
+    margin-bottom: 64px;
+}
+.specialists__title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 32px;
+    color: $colorText;
+    font-weight: 700;
+}
+.specialists__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    text-align: center;
+}
+.specialists__img {
+    border: 1px solid $primaryBgColor;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.specialists__name {
+    color: #544d83;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.specialists__dol {
+    color: #544d83;
 }
